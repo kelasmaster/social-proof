@@ -24,6 +24,7 @@ const socialProofData = [
 
 // DOM Elements
 const notificationContainer = document.getElementById("social-proof-notification");
+const aiIndonesiaArt = document.getElementById("ai-indonesia-art");
 const productImage = document.getElementById("product-image");
 const userName = document.getElementById("user-name");
 const productLink = document.getElementById("product-link");
@@ -40,10 +41,12 @@ function updateNotification() {
 
   // Show the notification
   notificationContainer.classList.remove("hidden");
+  aiIndonesiaArt.classList.add("hidden"); // Hide "AI Indonesia Art"
 
   // Hide the notification after 5 seconds
   setTimeout(() => {
     notificationContainer.classList.add("hidden");
+    aiIndonesiaArt.classList.remove("hidden"); // Show "AI Indonesia Art"
   }, 5000);
 
   // Move to the next notification
