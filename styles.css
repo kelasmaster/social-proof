@@ -16,8 +16,8 @@ body {
 
 /* Header */
 header {
-  background-color: #FFA500;
-  color: #000;
+  background-color: #007bff;
+  color: #fff;
   padding: 15px 0;
   text-align: center;
 }
@@ -62,17 +62,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #4169E1;
+  background-color: #f4f4f4;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   padding: 10px 0;
-}
-
-footer h1 {
-  margin-bottom: 10px;
-  color: #fff;
-  padding: 15px 0;
-  text-align: center;
 }
 
 #social-proof-container {
@@ -118,4 +111,23 @@ footer h1 {
 
 #notification-text a:hover {
   text-decoration: underline;
+}
+
+/* AI Indonesia Art */
+#ai-indonesia-art {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#ai-indonesia-art.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#ai-indonesia-art.visible {
+  opacity: 1;
 }
